@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="chb_wifi"
+        android:summaryOff="Use any internet"
+        android:summaryOn="Use only wifi internet"
+        android:title="WiFi" >
+    </CheckBoxPreference>
+
+    <EditTextPreference
+        android:defaultValue=""
+        android:dialogTitle="Directory"
+        android:key="ldir_address"
+        android:summary="Directory local address for files"
+        android:title="Directory" >
+    </EditTextPreference>
+    <EditTextPreference
+        android:defaultValue=""
+        android:dialogTitle="Url"
+        android:key="url_address"
+        android:summary="Url address for files"
+        android:title="Url" >
+    </EditTextPreference>
+    <EditTextPreference
+        android:defaultValue="3"
+        android:dialogTitle="play pause"
+        android:key="play_pause"
+        android:summary="play pause in seconds"
+        android:title="@string/play_pause_title" >
+    </EditTextPreference>
+
+</PreferenceScreen>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Image Viewer</string>
+    <string name="empty"></string>
+    <string name="settings">Settings</string>
+    <string name="refresh">Refresh</string>
+    <string name="upload">test upload</string>
+    <string name="next">></string>
+    <string name="prev">&lt;</string>
+    <string name="next10">->></string>
+    <string name="prev10">&lt;&lt;-</string>
+    <string name="play">play</string>
+    <string name="search">search</string>
+    <string name="zoom_p">+</string>
+    <string name="zoom_m">-</string>
+    <string name="play_pause_title">Pause for play</string>
+    
+</resources>

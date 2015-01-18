@@ -1,0 +1,248 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".FullscreenActivity" >
+
+    <ImageSwitcher
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+
+            <ImageButton
+                android:id="@+id/btn_prev"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/prev"
+                android:onClick="prev"
+                android:src="@android:drawable/ic_media_previous" />
+
+            <ImageButton
+                android:id="@+id/btn_prev10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/prev10"
+                android:onClick="prev10"
+                android:src="@android:drawable/ic_media_rew" />
+
+            <Button
+                android:id="@+id/btn_zoom_m"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="zoom_m"
+                android:text="@string/zoom_m"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/viewNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@android:color/transparent"
+                android:onClick="viewDlg"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_zoom_p"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="zoom_p"
+                android:text="@string/zoom_p"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btn_next10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/next10"
+                android:onClick="next10"
+                android:src="@android:drawable/ic_media_ff" />
+
+            <ImageButton
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/next"
+                android:onClick="next"
+                android:src="@android:drawable/ic_media_next" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+            <ImageButton
+                android:id="@+id/btn_prev_left"
+                android:layout_width="20sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/prev"
+                android:onClick="prev"
+                android:src="@android:drawable/ic_media_previous" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+            <ImageButton
+                android:id="@+id/btn_next_right"
+                android:layout_width="20sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/next"
+                android:onClick="next"
+                android:src="@android:drawable/ic_media_next" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+
+            <ImageButton
+                android:id="@+id/btn2_prev"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/prev"
+                android:onClick="prev"
+                android:src="@android:drawable/ic_media_previous" />
+
+            <ImageButton
+                android:id="@+id/btn2_prev10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/prev10"
+                android:onClick="prev10"
+                android:src="@android:drawable/ic_media_rew" />
+            
+            <Button
+                android:id="@+id/btn_zoom_m2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="zoom_m"
+                android:text="@string/zoom_m"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/viewNum2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="viewDlg"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/btn_zoom_p2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="zoom_p"
+                android:text="@string/zoom_p"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"/>
+
+            <ImageButton
+                android:id="@+id/btn2_play"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:contentDescription="@string/play"
+                android:onClick="play"
+                android:src="@android:drawable/ic_media_play" />
+
+            <ImageButton
+                android:id="@+id/btn2_next10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/next10"
+                android:onClick="next10"
+                android:src="@android:drawable/ic_media_ff" />
+
+            <ImageButton
+                android:id="@+id/btn2_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/next"
+                android:onClick="next"
+                android:src="@android:drawable/ic_media_next" />
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
